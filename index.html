@@ -194,6 +194,7 @@
   }
   .card .label .tag.own    { background: var(--mustard); }
   .card .label .tag.ext    { background: var(--teal); color: var(--paper); border-color: var(--teal); }
+  .card .label .tag.src    { background: var(--ink); color: var(--paper); border-color: var(--ink); }
   .card h3 {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 700;
@@ -369,7 +370,7 @@
   <section id="tools" class="section">
     <div class="section-head">
       <h2>The tools</h2>
-      <span class="count">06 · services</span>
+      <span class="count">08 · projects</span>
     </div>
 
     <div class="grid">
@@ -437,6 +438,28 @@
         <div class="host">plik.extragornax.fr</div>
         <p>A scriptable file-upload service (the excellent open-source <code>root-gg/plik</code>). Drop a file, get a link with a TTL, one-shot download, optional password, optional comments — and a clean CLI companion for piping tarballs from a terminal straight to a shareable URL.</p>
         <div class="stack"><span>Go</span><span>root-gg/plik</span><span>self-hosted</span></div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <!-- Discord to Instagram -->
+      <a class="card reveal" href="https://github.com/extragornax/discord_to_insta" target="_blank" rel="noopener">
+        <div class="perf"></div>
+        <div class="label"><span>№ 07 · automation</span><span class="tag src">on github</span></div>
+        <h3>Discord → Instagram</h3>
+        <div class="host">github.com/extragornax/discord_to_insta</div>
+        <p>An internal tool built for the <b>Mayo Jaune</b> cycling group: pull a weekly announcement from Discord, strip <code>@everyone</code> and role pings, resolve user mentions to Instagram handles, pick the matching <code>*_{km}.png</code> header image for the ride distance, and post it to Instagram via the Graph API — with a Telegram approval gate so a human sees every post before it goes live. Edits on Discord round-trip back to Instagram too.</p>
+        <div class="stack"><span>Rust</span><span>Axum</span><span>htmx</span><span>Telegram</span><span>IG Graph API</span></div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <!-- Mayo Jaune -->
+      <a class="card reveal" href="https://mayojaune.fr" target="_blank" rel="noopener">
+        <div class="perf"></div>
+        <div class="label"><span>№ 08 · cycling</span><span class="tag src">on gitlab</span></div>
+        <h3>Mayo Jaune</h3>
+        <div class="host">mayojaune.fr</div>
+        <p>Landing page for <b>Mayo Jaune</b>, a Paris cycling group — single-page site plus a <code>/maps</code> viewer that lists the group's rides as GPX traces pulled from Komoot. Static Next.js export, deployed to its own domain. Source lives on GitLab.</p>
+        <div class="stack"><span>Next.js 16</span><span>TypeScript</span><span>Tailwind</span><span>static export</span></div>
         <span class="arrow">↗</span>
       </a>
 
