@@ -75,22 +75,22 @@
 
   /* ── hero ──────────────────────────────────────────── */
   .hero {
-    padding: 70px 0 40px;
+    padding: 44px 0 28px;
     position: relative;
   }
   .hero .eyebrow {
     font-family: "Space Mono", ui-monospace, monospace;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: .18em;
     text-transform: uppercase;
     color: var(--vermilion);
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
   .hero h1 {
     font-family: "Bricolage Grotesque", system-ui, sans-serif;
     font-weight: 800;
-    font-size: clamp(62px, 12vw, 160px);
-    line-height: .88;
+    font-size: clamp(44px, 8.4vw, 108px);
+    line-height: .9;
     letter-spacing: -0.035em;
     margin: 0;
   }
@@ -102,16 +102,17 @@
   }
   .hero .dot {
     display: inline-block;
-    width: .42em; height: .42em;
+    width: .36em; height: .36em;
     border-radius: 50%;
     background: var(--vermilion);
     vertical-align: .18em;
     margin-left: .08em;
   }
   .hero .lede {
-    max-width: 640px;
-    margin: 32px 0 0;
-    font-size: 20px;
+    max-width: 620px;
+    margin: 22px 0 0;
+    font-size: clamp(15px, 1.6vw, 18px);
+    line-height: 1.5;
     color: var(--ink-soft);
   }
   .hero .lede b { color: var(--ink); font-weight: 600; }
@@ -338,6 +339,21 @@
   @media (max-width: 900px) {
     .card { grid-column: span 12; }
     .prose .col { grid-column: span 12; }
+  }
+  @media (max-width: 560px) {
+    .wrap { padding: 20px 18px 72px; }
+    .hero { padding: 28px 0 20px; }
+    .hero .eyebrow { margin-bottom: 12px; }
+    .hero .lede { margin-top: 18px; }
+    .top .stamp { font-size: 11px; padding: 3px 8px; }
+    .top .meta { gap: 12px; }
+    .section { margin-top: 52px; }
+    .section-head { padding-top: 10px; margin-bottom: 20px; }
+    .card { padding: 22px 20px 20px; }
+    .card h3 { font-size: 26px; }
+    .marquee-track { font-size: 26px; gap: 32px; }
+    .marquee-track span { padding-right: 32px; }
+    .marquee-track span::after { margin-left: 32px; }
   }
 </style>
 </head>
