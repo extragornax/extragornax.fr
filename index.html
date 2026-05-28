@@ -426,15 +426,26 @@
   <section id="tools" class="section">
     <div class="section-head">
       <h2>The tools</h2>
-      <span class="count">15 · projects</span>
+      <span class="count">16 · projects</span>
     </div>
 
     <div class="grid">
 
+      <!-- Monitoring -->
+      <a class="card reveal" href="https://monitoring.extragornax.fr" target="_blank" rel="noopener">
+        <div class="perf"></div>
+        <div class="label"><span>№ 01 · ops</span><span class="tag own">built here</span></div>
+        <h3>Monitoring</h3>
+        <div class="host">monitoring.extragornax.fr</div>
+        <p>Self-hosted uptime monitoring with public status pages and multi-channel alerting. HTTP / TCP / ping checks at 30 s–5 min intervals, consecutive-failure thresholds, automatic incident open/resolve, and 24 h / 7 d / 30 d uptime stats with a response-time sparkline. Webhook (Slack/Discord), per-user SMTP email and Telegram alerts with cooldowns. Public status pages with custom branding, RSS feed, incident updates. Free / Pro / Team plan tiers gated by Stripe billing, with graceful downgrade enforcement and daily S3 database backups.</p>
+        <div class="stack"><span>Rust</span><span>Axum</span><span>PostgreSQL</span><span>sqlx</span><span>Stripe</span><span>Lettre</span></div>
+        <span class="arrow">↗</span>
+      </a>
+
       <!-- GPX to Graph -->
       <a class="card reveal" href="https://gpx.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 01 · cycling</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 02 · cycling</span><span class="tag own">built here</span></div>
         <h3>GPX → Graph</h3>
         <div class="host">gpx.extragornax.fr</div>
         <p>Upload a GPX route and get back a long, flat elevation-profile strip sized for the handlebar of a bike. Climbs over a gain threshold are highlighted in orange with gradient and elevation labels; waypoints appear as red checkpoints. There's a mirror option for those who print onto transparent film and tape it the other way round.</p>
@@ -445,7 +456,7 @@
       <!-- Kahoot Free -->
       <a class="card reveal" href="https://kahoot.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 02 · party</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 03 · party</span><span class="tag own">built here</span></div>
         <h3>Kahoot Free</h3>
         <div class="host">kahoot.extragornax.fr</div>
         <p>A self-hosted real-time quiz game in the spirit of Kahoot. Host a round on a big screen, players join from their phones with a 6-digit PIN or QR. True/false or multi-choice questions, per-question images and timers, live leaderboard with confetti and a dramatic podium reveal. Argon2 + JWT + proof-of-work captcha — no third-party auth.</p>
@@ -456,7 +467,7 @@
       <!-- Dotwatcher -->
       <a class="card reveal" href="https://dotwatcher.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 03 · racing</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 04 · racing</span><span class="tag own">built here</span></div>
         <h3>Dotwatcher</h3>
         <div class="host">dotwatcher.extragornax.fr</div>
         <p>A drop-in replacement for one event page on <code>app.madcap.cc</code> — live bike-race GPS tracking. The original ships a 13 MB bundle and waits 6-9 s on a cold origin XHR. This server caches every 30 s, pre-compresses brotli/gzip, and serves the whole thing in <b>~0.7 s</b> instead of ~31 s. Same data, one memcpy per request.</p>
@@ -467,7 +478,7 @@
       <!-- BRM Maps -->
       <a class="card reveal" href="https://brm.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 04 · cycling</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 05 · cycling</span><span class="tag own">built here</span></div>
         <h3>BRM Maps</h3>
         <div class="host">brm.extragornax.fr</div>
         <p>Self-hosted browser for <b>Brevets de Randonneurs Mondiaux</b>, pulled from the Audax Club Parisien worldwide calendar. Filter by distance (200 / 300 / 400 / 600 / 1000), country, region and date; plot everything on a clustered Leaflet map; download a GPX for any OpenRunner-hosted route with one click. A hard 24 h floor on upstream fetches keeps ACP's servers happy.</p>
@@ -478,7 +489,7 @@
       <!-- Meteo -->
       <a class="card reveal" href="https://meteo.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 05 · cycling</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 06 · cycling</span><span class="tag own">built here</span></div>
         <h3>Meteo</h3>
         <div class="host">meteo.extragornax.fr</div>
         <p>Upload a GPX (or pick one from <i>BRM Maps</i> / <i>Cyclo Copains</i>), choose a start datetime, and get a per-segment forecast along the route — temperature, rain probability, and wind vector <b>projected onto your heading</b> so you see exactly where you'll eat a headwind and where the wind's on your back. A "best departure window" picker resimulates the ride at 30-minute offsets over the next 48 h and shows which start minimises total headwind exposure. Forecasts are cached per (lat, lon, hour) in SQLite, so repeat queries are instant.</p>
@@ -489,7 +500,7 @@
       <!-- Ravito -->
       <a class="card reveal" href="https://ravito.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 06 · cycling</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 07 · cycling</span><span class="tag own">built here</span></div>
         <h3>Ravito</h3>
         <div class="host">ravito.extragornax.fr</div>
         <p>Upload a GPX and see every <i>ravito</i> along the route — bakeries, supermarkets, bar-tabacs, water fountains — pulled from OpenStreetMap via the Overpass API. Grouped by ride-km so you can plan stops every 40-60 km instead of bonking at km 210. Opening-hours strings are parsed so you know whether the <i>boulangerie</i> at km 180 will actually be open when you get there. Results cached locally so re-running the same route is instant.</p>
@@ -500,7 +511,7 @@
       <!-- Strava Stats -->
       <a class="card reveal" href="https://strava.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 07 · fitness</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 08 · fitness</span><span class="tag own">built here</span></div>
         <h3>Strava Stats</h3>
         <div class="host">strava.extragornax.fr</div>
         <p>Upload a Strava CSV export and get a full personal dashboard — yearly / monthly / weekly volume, activity streaks, personal bests, fitness-fatigue (CTL / ATL / TSB) curve, power trends, HR zone breakdown, and weather correlation (wind rose, temperature vs. speed). All computed server-side, no Strava API token required. Your data stays on this box.</p>
@@ -511,7 +522,7 @@
       <!-- Countdown -->
       <a class="card reveal" href="https://countdown.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 08 · event</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 09 · event</span><span class="tag own">built here</span></div>
         <h3>Countdown</h3>
         <div class="host">countdown.extragornax.fr</div>
         <p>A full-screen countdown timer aimed at a target date — currently July 25 2026, 14:00 CEST — that flips to an elapsed-time counter once the deadline passes. Friends and supporters can submit encouragement messages (with bib number and runner name) via <code>/send</code>; messages rotate on the main display with cinematic fade-in animations. Built for projecting on a big screen at race events.</p>
@@ -522,7 +533,7 @@
       <!-- Plik -->
       <a class="card reveal" href="https://plik.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 09 · utility</span><span class="tag ext">third-party</span></div>
+        <div class="label"><span>№ 10 · utility</span><span class="tag ext">third-party</span></div>
         <h3>Plik</h3>
         <div class="host">plik.extragornax.fr</div>
         <p>A scriptable file-upload service (the excellent open-source <code>root-gg/plik</code>). Drop a file, get a link with a TTL, one-shot download, optional password, optional comments — and a clean CLI companion for piping tarballs from a terminal straight to a shareable URL.</p>
@@ -533,7 +544,7 @@
       <!-- Discord to Instagram -->
       <a class="card reveal" href="https://github.com/extragornax/discord_to_insta" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 10 · automation</span><span class="tag src">on github</span></div>
+        <div class="label"><span>№ 11 · automation</span><span class="tag src">on github</span></div>
         <h3>Discord → Instagram</h3>
         <div class="host">github.com/extragornax/discord_to_insta</div>
         <p>An internal tool built for the <b>Mayo Jaune</b> cycling group: pull a weekly announcement from Discord, strip <code>@everyone</code> and role pings, resolve user mentions to Instagram handles, pick the matching <code>*_{km}.png</code> header image for the ride distance, and post it to Instagram via the Graph API — with a Telegram approval gate so a human sees every post before it goes live. Edits on Discord round-trip back to Instagram too.</p>
@@ -544,7 +555,7 @@
       <!-- Mayo Jaune -->
       <a class="card reveal" href="https://mayojaune.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 11 · cycling</span><span class="tag src">on gitlab</span></div>
+        <div class="label"><span>№ 12 · cycling</span><span class="tag src">on gitlab</span></div>
         <h3>Mayo Jaune</h3>
         <div class="host">mayojaune.fr</div>
         <p>Landing page for <b>Mayo Jaune</b>, a Paris cycling group — single-page site plus a <code>/maps</code> viewer that lists the group's rides as GPX traces pulled from Komoot. Static Next.js export, deployed to its own domain. Source lives on GitLab.</p>
@@ -555,7 +566,7 @@
       <!-- Cagnotte -->
       <a class="card reveal" href="https://cagnotte.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 12 · utility</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 13 · utility</span><span class="tag own">built here</span></div>
         <h3>Cagnotte</h3>
         <div class="host">cagnotte.extragornax.fr</div>
         <p>Self-hosted shareable money pots — a <i>Leetchi</i> alternative without the 4% commission. Create a pot with a goal, drop in your Lydia / IBAN / PayPal details, share the link. Contributors declare what they've paid; the organiser confirms each entry against the actual transfer. Progress bar, contributor list, deadline auto-close, CSV export — no payment processor, no account for participants.</p>
@@ -566,7 +577,7 @@
       <!-- Recipes -->
       <a class="card reveal" href="https://recipe.extragornax.fr" target="_blank" rel="noopener">
         <div class="perf"></div>
-        <div class="label"><span>№ 13 · cooking</span><span class="tag own">built here</span></div>
+        <div class="label"><span>№ 14 · cooking</span><span class="tag own">built here</span></div>
         <h3>Recipes</h3>
         <div class="host">recipe.extragornax.fr</div>
         <p>A self-hosted recipe book — collect, search, and cook from a personal library. Recipes are stored with ingredients, steps, prep / cook times and tags; a cookie-session login keeps the kitchen private. Postgres-backed for honest full-text search, Tera templates for server-rendered pages, Argon2 for the password hash. No third-party API, no tracking, no ads.</p>
@@ -581,7 +592,7 @@
           <!-- Trace -->
           <a class="card" href="https://trace.extragornax.fr" target="_blank" rel="noopener">
             <div class="perf"></div>
-            <div class="label"><span>№ 14 · safety</span><span class="tag wip">wip</span></div>
+            <div class="label"><span>№ 15 · safety</span><span class="tag wip">wip</span></div>
             <h3>Trace</h3>
             <div class="host">trace.extragornax.fr</div>
             <p>Self-hosted live GPS tracker for solo bike rides. Open the tracker on your phone, share the link, and anyone can watch your breadcrumb trail on a Leaflet map in real time via WebSocket push — with speed, distance and elevation. Pings queue offline and flush when signal returns. Sessions auto-expire after 48 h. A self-hosted Strava Beacon with zero cloud dependency.</p>
@@ -592,7 +603,7 @@
           <!-- Cyclo Copains -->
           <a class="card" href="https://cyclo.extragornax.fr" target="_blank" rel="noopener">
             <div class="perf"></div>
-            <div class="label"><span>№ 15 · cycling</span><span class="tag wip">wip</span></div>
+            <div class="label"><span>№ 16 · cycling</span><span class="tag wip">wip</span></div>
             <h3>Cyclo Copains</h3>
             <div class="host">cyclo.extragornax.fr</div>
             <p>« Trouve ta prochaine sortie vélo entre copains. » A directory of social bike rides across France — no race timing, no pressure. Filter by region, see the organising clubs, drop rides on a calendar or a map. A small admin backend lets me keep the listings up to date.</p>
